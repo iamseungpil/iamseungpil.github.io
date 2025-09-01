@@ -1,11 +1,12 @@
 ---
 title: "Solution Augmentation for ARC-AGI Problems Using GFlowNet: A Probabilistic Exploration Approach"
 collection: publications
-authors: "[Sanha Hwang&#42;]https://scholar.google.com/citations?user=DNIeCSMAAAAJ), [Seungpil Lee](iamseungpil.github.io), [Sejin Kim&#42;](https://sejinkimm.github.io/), [Jihwan Lee](https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ), and [**Sundong Kim†**](https://sundong.kim)"
+authors: "[Sanha Hwang](https://scholar.google.com/citations?user=DNIeCSMAAAAJ), [Seungpil Lee](iamseungpil.github.io), [Sejin Kim&#42;](https://sejinkimm.github.io/), [Jihwan Lee](https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ), and [**Sundong Kim†**](https://sundong.kim)"
 permalink: /publication/2025-08-Solution Augmentation for ARC-AGI Problems Using GFlowNet A Probabilistic Exploration Approach
 date: 2025-08-01
 venue: 'TMLR'
 paperurl: 'https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705080&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=A&readTime=5-10&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true'
+teaser: images/tmlr25-gflownet.png
 codeurl: ''
 siteurl: ''
 citation: ''
