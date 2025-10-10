@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2025-01-01T00:00:00-08:00">
+  <meta property="article:published_time" content="2025-01-01T00:00:00-07:00">
 
 
 
@@ -299,11 +299,12 @@
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/publication/2024-03-18-TIST" class="pagination--pager" title="Reasoning Abilities of Large Language Models: In-Depth Analysis on the Abstraction and Reasoning Corpus
+      <a href="http://localhost:4000/publication/2024-11-mc-larc-emnlp.md" class="pagination--pager" title="From Generation to Selection: Findings of Converting Analogical Problem-Solving into Multiple-Choice Questions
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="http://localhost:4000/publication/2024-03-18-TIST" class="pagination--pager" title="Reasoning Abilities of Large Language Models: In-Depth Analysis on the Abstraction and Reasoning Corpus
+">Next</a>
     
   </nav>
 

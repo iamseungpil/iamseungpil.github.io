@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2024-11-08T00:00:00-08:00">
+  <meta property="article:published_time" content="2024-11-08T00:00:00-07:00">
 
 
 
@@ -303,7 +303,7 @@
 ">Previous</a>
     
     
-      <a href="http://localhost:4000/publication/2024-03-18-TIST" class="pagination--pager" title="Reasoning Abilities of Large Language Models: In-Depth Analysis on the Abstraction and Reasoning Corpus
+      <a href="http://localhost:4000/publication/2024-12-neurips-reasoning.md" class="pagination--pager" title="Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)
 ">Next</a>
     
   </nav>

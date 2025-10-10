@@ -277,6 +277,8 @@
       
 
       
+
+      
     </div>
 
     
@@ -342,6 +344,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -471,6 +475,10 @@ function toggleBibtex(id) {
       
         <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705080&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=A&readTime=5-10&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true" class="btn">PAPER</a>
       
+
+      
+        <a href="" class="btn">SITE</a>
+      
     </div>
 
     
@@ -566,6 +574,10 @@ function toggleBibtex(id) {
 
       
         <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705335&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=A&readTime=5-10&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true" class="btn">PAPER</a>
+      
+
+      
+        <a href="" class="btn">SITE</a>
       
     </div>
 
@@ -667,6 +679,10 @@ function toggleBibtex(id) {
 
       
         <a href="https://arxiv.org/abs/2407.20806" class="btn">PAPER</a>
+      
+
+      
+        <a href="https://www.youtube.com/watch?v=QcH0rkqtfSM" class="btn">SITE</a>
       
     </div>
 
@@ -780,6 +796,10 @@ function toggleBibtex(id) {
       
         <a href="https://sundong.kim/assets/pdf/2024_IJCAIW_MCLARC.pdf" class="btn">PAPER</a>
       
+
+      
+        <a href="https://mc-larc.github.io/" class="btn">SITE</a>
+      
     </div>
 
     
@@ -892,6 +912,10 @@ function toggleBibtex(id) {
       
         <a href="https://aclanthology.org/2024.findings-emnlp.392/" class="btn">PAPER</a>
       
+
+      
+        <a href="https://mc-larc.github.io/" class="btn">SITE</a>
+      
     </div>
 
     
@@ -964,6 +988,121 @@ function toggleBibtex(id) {
 <div class="archive__item">
   
     <div class="archive__item-teaser">
+      <img src="http://localhost:4000/images/neurips24w-llm.png" alt="">
+    </div>
+  
+
+  <div class="archive__item-content">
+    <h2 class="archive__item-title">Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)</h2>
+
+    
+      <p class="archive__item-authors"><p><a href="iamseungpil.github.io">Seungpil Lee*</a>, <a href="https://scholar.google.com/citations?user=vBmLpIUAAAAJ&amp;hl=en">Woochang Sim*</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=J5BIlf8AAAAJ">Donghyeon Shin*</a>, Sejin Kim and <a href="https://sundong.kim/"><strong>Sundong Kim†</strong></a></p>
+</p>
+    
+    
+    
+      <p class="archive__item-venue"><i>In NeurIPS Workshop on System-2 Reasoning at Scale, 2024</i>, 2025</p>
+    
+
+    <div class="archive__item-buttons">
+      
+
+      
+        <button onclick="toggleBibtex('bibtex-reasoning-abilities-of-large-language-models-through-the-lens-of-abstraction-and-reasoning-extended-abstract-of-the-below-paper')" class="btn">BIB</button>
+      
+
+      
+
+      
+
+      
+        <a href="https://github.com/GIST-DSLab/ARC_Prompt" class="btn">CODE</a>
+      
+
+      
+
+      
+
+      
+
+      
+        <a href="https://sundong.kim/assets/pdf/2024_NeurIPSW_LLMonARC.pdf" class="btn">PAPER</a>
+      
+
+      
+        <a href="https://llm-on-arc.pages.dev/" class="btn">SITE</a>
+      
+    </div>
+
+    
+      <div id="bibtex-reasoning-abilities-of-large-language-models-through-the-lens-of-abstraction-and-reasoning-extended-abstract-of-the-below-paper" class="bibtex" style="display: none;">
+        <pre>@article{LoTHneurips2024Lee,
+  title = {{Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)}},
+  author = {Lee, Seungpil and Sim, Woochang and Shin, Donghyeon and Kim, Sejin and Kim, Sundong},
+  booktitle = {NeurIPS Workshop on System-2 Reasoning at Scale},
+  year = {2024},
+  }
+</pre>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+function toggleBibtex(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+<!-- 
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2024-12-neurips-reasoning.md" rel="permalink">Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)
+</a>
+      
+    </h2>
+    
+    
+
+        
+          <p>Published in <i>In NeurIPS Workshop on System-2 Reasoning at Scale, 2024</i>, 2025 </p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>The existing methods for evaluating the inference abilities of Large Language Models (LLMs) have been results-centric, making it difficult to assess the inference process. We introduce a new approach using the Abstract and Reasoning Corpus (ARC) dataset to evaluate the inference and contextual understanding abilities of large language models in a process-centric manner. ARC demands rigorous logical structures for problem-solving, making it a benchmark that facilitates the comparison of model inference abilities with humans. Experimental results confirm that while large language models possess weak inference abilities, they still lag in terms of logical coherence, compositionality, and productivity. Our experiments highlight the reasoning capabilities of LLMs, proposing development paths for achieving human-level reasoning.</p>
+</p>
+    
+    
+    
+      <p>Download <a href=" https://sundong.kim/assets/pdf/2024_NeurIPSW_LLMonARC.pdf "><u>here</u></a></p>
+    
+
+  </article>
+</div> -->
+
+    
+  
+    
+      
+
+<div class="archive__item">
+  
+    <div class="archive__item-teaser">
       <img src="http://localhost:4000/images/tist24-llmonarc.png" alt="">
     </div>
   
@@ -1003,6 +1142,10 @@ function toggleBibtex(id) {
 
       
         <a href="https://arxiv.org/abs/2403.11793" class="btn">PAPER</a>
+      
+
+      
+        <a href="https://llm-on-arc.pages.dev/" class="btn">SITE</a>
       
     </div>
 
@@ -1075,35 +1218,27 @@ function toggleBibtex(id) {
 <div class="archive__item">
   
     <div class="archive__item-teaser">
-      <img src="http://localhost:4000/images/neurips24w-llm.png" alt="">
+      <img src="http://localhost:4000/images/tmlr25-gflownet.png" alt="">
     </div>
   
 
   <div class="archive__item-content">
-    <h2 class="archive__item-title">Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)</h2>
+    <h2 class="archive__item-title">Solution Augmentation for ARC-AGI Problems Using GFlowNet: A Probabilistic Exploration Approach</h2>
 
     
-      <p class="archive__item-authors"><p><a href="iamseungpil.github.io">Seungpil Lee*</a>, <a href="https://scholar.google.com/citations?user=vBmLpIUAAAAJ&amp;hl=en">Woochang Sim*</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=J5BIlf8AAAAJ">Donghyeon Shin*</a>, Sejin Kim and <a href="https://sundong.kim/"><strong>Sundong Kim†</strong></a></p>
+      <p class="archive__item-authors"><p><a href="https://scholar.google.com/citations?user=DNIeCSMAAAAJ">Sanha Hwang</a>, <a href="iamseungpil.github.io">Seungpil Lee</a>, <a href="https://sejinkimm.github.io/">Sejin Kim</a>, and <a href="https://sundong.kim"><strong>Sundong Kim†</strong></a></p>
 </p>
     
     
     
-      <p class="archive__item-venue"><i>In NeurIPS Workshop on System-2 Reasoning at Scale, 2024</i>, 2025</p>
+      <p class="archive__item-venue"><i>Transactions on Machine Learning Research</i>, 2025</p>
     
 
     <div class="archive__item-buttons">
       
 
       
-        <button onclick="toggleBibtex('bibtex-reasoning-abilities-of-large-language-models-through-the-lens-of-abstraction-and-reasoning-extended-abstract-of-the-below-paper')" class="btn">BIB</button>
-      
 
-      
-
-      
-
-      
-        <a href="https://github.com/GIST-DSLab/ARC_Prompt" class="btn">CODE</a>
       
 
       
@@ -1113,20 +1248,16 @@ function toggleBibtex(id) {
       
 
       
-        <a href="https://sundong.kim/assets/pdf/2024_NeurIPSW_LLMonARC.pdf" class="btn">PAPER</a>
+
+      
+
+      
+        <a href="https://openreview.net/pdf?id=ULCOhBgGzy" class="btn">PAPER</a>
+      
+
       
     </div>
 
-    
-      <div id="bibtex-reasoning-abilities-of-large-language-models-through-the-lens-of-abstraction-and-reasoning-extended-abstract-of-the-below-paper" class="bibtex" style="display: none;">
-        <pre>@article{LoTHneurips2024Lee,
-  title = {{Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)}},
-  author = {Lee, Seungpil and Sim, Woochang and Shin, Donghyeon and Kim, Sejin and Kim, Sundong},
-  booktitle = {NeurIPS Workshop on System-2 Reasoning at Scale},
-  year = {2024},
-  }
-</pre>
-      </div>
     
   </div>
 </div>
@@ -1155,7 +1286,7 @@ function toggleBibtex(id) {
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/publication/2024-12-neurips-reasoning.md" rel="permalink">Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)
+        <a href="http://localhost:4000/publication/2025-09-Solution Augmentation for ARC-AGI Problems Using GFlowNet A Probabilistic Exploration Approach" rel="permalink">Solution Augmentation for ARC-AGI Problems Using GFlowNet: A Probabilistic Exploration Approach
 </a>
       
     </h2>
@@ -1163,16 +1294,17 @@ function toggleBibtex(id) {
     
 
         
-          <p>Published in <i>In NeurIPS Workshop on System-2 Reasoning at Scale, 2024</i>, 2025 </p>
+          <p>Published in <i>Transactions on Machine Learning Research</i>, 2025 </p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>The existing methods for evaluating the inference abilities of Large Language Models (LLMs) have been results-centric, making it difficult to assess the inference process. We introduce a new approach using the Abstract and Reasoning Corpus (ARC) dataset to evaluate the inference and contextual understanding abilities of large language models in a process-centric manner. ARC demands rigorous logical structures for problem-solving, making it a benchmark that facilitates the comparison of model inference abilities with humans. Experimental results confirm that while large language models possess weak inference abilities, they still lag in terms of logical coherence, compositionality, and productivity. Our experiments highlight the reasoning capabilities of LLMs, proposing development paths for achieving human-level reasoning.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>In this study, we propose a new method that uses the World Model algorithm to analyze the influence of prior knowledge when solving the ARC benchmark, as well as the types of prior knowledge included in the ARC.</p>
+
 </p>
     
     
     
-      <p>Download <a href=" https://sundong.kim/assets/pdf/2024_NeurIPSW_LLMonARC.pdf "><u>here</u></a></p>
+      <p>Download <a href=" https://openreview.net/pdf?id=ULCOhBgGzy "><u>here</u></a></p>
     
 
   </article>
@@ -1205,6 +1337,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -1260,7 +1394,7 @@ function toggleBibtex(id) {
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-03-01T00:00:00-08:00">March 01, 2012</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-03-01T00:00:00-07:00">March 01, 2012</time></p>
         
 
     
@@ -1291,6 +1425,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -1346,7 +1482,7 @@ function toggleBibtex(id) {
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-03-01T00:00:00-08:00">March 01, 2013</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-03-01T00:00:00-07:00">March 01, 2013</time></p>
         
 
     
@@ -1378,6 +1514,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -1433,7 +1571,7 @@ function toggleBibtex(id) {
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-02-01T00:00:00-08:00">February 01, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-02-01T00:00:00-07:00">February 01, 2014</time></p>
         
 
     
@@ -1465,6 +1603,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -1520,7 +1660,7 @@ function toggleBibtex(id) {
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-03-01T00:00:00-08:00">March 01, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-03-01T00:00:00-07:00">March 01, 2014</time></p>
         
 
     
@@ -1560,6 +1700,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       
@@ -1647,6 +1789,8 @@ function toggleBibtex(id) {
     
 
     <div class="archive__item-buttons">
+      
+
       
 
       

@@ -54,6 +54,10 @@
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}" class="btn">PAPER</a>
       {% endif %}
+
+      {% if post.siteurl %}
+        <a href="{{ post.siteurl }}" class="btn">SITE</a>
+      {% endif %}
     </div>
 
     {% if post.bibtex_content %}
