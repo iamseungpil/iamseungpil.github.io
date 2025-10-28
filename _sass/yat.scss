@@ -19,6 +19,21 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $white-color: #fdfdfd !default;
 
+$border-color: $grey-color-light !default;
+$border-radius: 4px !default;
+
+// Type sizes for compatibility with _archive.scss
+$type-size-5: 1em !default;
+$type-size-6: 0.75em !default;
+$type-size-7: 0.6875em !default;
+
+// Font families
+$sans-serif: $base-font-family !default;
+$sans-serif-narrow: $base-font-family !default;
+
+// Color aliases
+$muted-text-color: $grey-color !default;
+
 $table-text-align: left !default;
 
 $header-height: $base-line-height * $base-font-size * 2.85 !default;
@@ -38,6 +53,9 @@ $banner-background: rgba(0,0,0,0.8) !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+
+// Breakpoint aliases for compatibility
+$small: $on-palm !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

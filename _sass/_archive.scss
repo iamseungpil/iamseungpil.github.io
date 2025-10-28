@@ -98,7 +98,7 @@
       }
     }
     
-    @include breakpoint($small) {
+    @include media-query($small) {
       .archive__item-teaser {
         flex: 0 0 120px;
       }

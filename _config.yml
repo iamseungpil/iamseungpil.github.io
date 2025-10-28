@@ -42,6 +42,7 @@ header_pages:
 paginate: 5
 
 # Build settings
+theme: jekyll-theme-yat
 highlighter: rouge
 markdown: kramdown
 kramdown:
