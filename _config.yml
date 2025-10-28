@@ -32,7 +32,7 @@ header_transparent: true
 content_width: "920px"
 
 # Night/Dark mode
-night_mode: "auto"
+night_mode: "off"
 
 # Header pages
 header_pages:
