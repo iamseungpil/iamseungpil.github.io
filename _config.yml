@@ -42,7 +42,7 @@ header_pages:
 paginate: 5
 
 # Build settings
-theme: jekyll-theme-yat
+remote_theme: jeffreytse/jekyll-theme-yat
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -81,6 +81,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+  - jekyll-remote-theme
 
 # Include/Exclude files
 include:
