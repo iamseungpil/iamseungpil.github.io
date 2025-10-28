@@ -1,142 +1,147 @@
 ---
-layout: articles
+layout: about
 title: About
 ---
 
-<style>
-.profile-section {
-  text-align: center;
-  margin: 3em 0 2em 0;
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 1.5em;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.profile-info h1 {
-  margin: 0.5em 0;
-  font-size: 2em;
-}
-
-.profile-info p {
-  margin: 0.3em 0;
-  color: #666;
-}
-
-.profile-links {
-  margin-top: 1em;
-}
-
-.profile-links a {
-  margin: 0 0.5em;
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.profile-links a:hover {
-  text-decoration: underline;
-}
-
-.about-text {
-  margin: 2em 0;
-  line-height: 1.8;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.image-grid img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.publications-section {
-  margin-top: 3em;
-}
-
-.publications-section h2 {
-  font-size: 1.8em;
-  margin: 2em 0 1em 0;
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid #e5e5e5;
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-image {
-    width: 150px;
-    height: 150px;
-  }
-}
-</style>
-
-<div class="profile-section">
-  <img src="images/seungpil_profile.jpg" alt="Seungpil Lee" class="profile-image">
-
-  <div class="profile-info">
-    <h1>Seungpil Lee</h1>
-    <p>Master student in Gwangju Institute of Science and Technology</p>
-    <div class="profile-links">
-      <a href="mailto:iamseungpil@gm.gist.ac.kr">Email</a> |
-      <a href="https://scholar.google.com/citations?user=iPfrGWAAAAAJ&hl=ko" target="_blank">Google Scholar</a>
-    </div>
+<!-- Profile Section with Horizontal Layout -->
+<div style="display: flex; align-items: center; gap: 30px; margin-bottom: 25px;">
+  <img src="images/20241115_161350(1).jpg" alt="Seungpil Lee" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover;">
+  <div>
+    <h2>Seungpil Lee</h2>
+    <p style="font-size: 16px; color: #888; margin-bottom: 8px;">
+      Gwangju Institute of Science and Technology (GIST)
+    </p>
+    <p style="font-size: 18px; color: #666; margin-bottom: 10px;">
+      <strong>Program:</strong> Master's in Artificial Intelligence
+    </p>
+    <p style="font-size: 16px; color: #888;">
+      <a href="mailto:iamseungpil@gm.gist.ac.kr" style="color: #3498db; text-decoration: none;">Email</a> |
+      <a href="https://scholar.google.com/citations?user=iPfrGWAAAAAJ&hl=ko" target="_blank" style="color: #3498db; text-decoration: none;">Google Scholar</a> |
+      <a href="files/CV_Seungpil_Lee.pdf" target="_blank" style="color: #3498db; text-decoration: none;">CV</a>
+    </p>
   </div>
 </div>
 
-<div class="about-text">
-  <p>
-    Nice to meet you. This is Seungpil Lee's website. Here, you will be able to review a brief portfolio and publications about me.
+<!-- Personal Statement with Gray Box -->
+<div style="margin-bottom: 25px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
+  <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 15px;">
+    Nice to meet you. I'm a passionate Master's student who embraces challenges in unfamiliar domains. Although my primary interest lies in the field of brain-inspired AI, I also have a broad curiosity that extends to other areas of artificial intelligence, including NLP and reinforcement learning. Additionally, I maintain a keen interest in interdisciplinary subjects such as cognitive science and STS.
   </p>
 
-  <p>
-    I'm a passionate student in Master's degree who embraces challenges in unfamiliar domains. Although my primary interest lies in the field of brain-inspired AI, I also have a broad curiosity that extends to other areas of artificial intelligence, including NLP and reinforcement learning. Additionally, I maintain a keen interest in interdisciplinary subjects such as cognitive science and STS.
-  </p>
-
-  <div class="image-grid">
-    <img src="images/diagonal-flip.gif" alt="Diagonal flip transformation">
-    <img src="images/horizontal-align.gif" alt="Horizontal alignment">
-    <img src="images/tetris.gif" alt="Tetris pattern">
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin: 1.5em 0;">
+    <img src="images/diagonal-flip.gif" alt="Diagonal flip transformation" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <img src="images/horizontal-align.gif" alt="Horizontal alignment" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <img src="images/tetris.gif" alt="Tetris pattern" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   </div>
 
-  <p>
-    I am currently solving visual reasoning benchmark, Abstraction and Reasoning Corpus (ARC) with <a href="https://sundong.kim/" target="_blank">Prof. Sundong Kim</a> in GIST. ARC is a kind of IQ test for computers - if we can solve this challenge, we might be able to develop AI with genuine reasoning capabilities.
-  </p>
-
-  <p>
-    Perhaps you'll soon meet an AI that surpasses human intelligence. You might find my name there. If you'd like to contact me before that happens, please check the contact information above!
+  <p style="font-size: 16px; color: #555; line-height: 1.6; margin: 0;">
+    I am currently solving visual reasoning benchmark, Abstraction and Reasoning Corpus (ARC) with <a href="https://sundong.kim/" target="_blank" style="color: #3498db; text-decoration: none;">Prof. Sundong Kim</a> in GIST. ARC is a kind of IQ test for computers - if we can solve this challenge, we might be able to develop AI with genuine reasoning capabilities. Perhaps you'll soon meet an AI that surpasses human intelligence. You might find my name there!
   </p>
 </div>
 
-<div class="publications-section">
-  <h2>Publications</h2>
+<!-- Education Section -->
+<section style="margin-bottom: 20px;">
+  <h3 id="education" style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">
+    🎓 Education
+  </h3>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Gwangju Institute of Science and Technology (GIST)</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>March 2025 - Present</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Master's Degree in AI Convergence</li>
+      <li>Research focus: Brain-inspired AI, Visual Reasoning, Abstract Reasoning</li>
+      <li>Advisor: Prof. Sundong Kim</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Gwangju Institute of Science and Technology (GIST)</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>March 2018 - December 2024</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Bachelor's Degree in Electrical Engineering and Computer Science</li>
+      <li>Minor in Mathematics</li>
+      <li>Minor in Literature</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- Research Experience Section -->
+<section style="margin-bottom: 20px;">
+  <h3 id="research-experience" style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">
+    🔬 Research Experience
+  </h3>
+
+  <div style="margin-bottom: 25px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Data Science and Artificial Intelligence Lab, GIST</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>March 2024 - Present</strong></p>
+    <p style="color: #666; margin-bottom: 10px;"><em>Graduate Research Assistant, Supervised by <a href="https://sundong.kim/" target="_blank" style="color: #3498db; text-decoration: none;">Prof. Sundong Kim</a></em></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Working on Abstraction and Reasoning Corpus (ARC) challenge</li>
+      <li>Developing novel approaches for visual reasoning and abstract problem solving</li>
+      <li>Researching brain-inspired AI architectures for cognitive reasoning tasks</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section style="margin-bottom: 20px;">
+  <h3 id="publications" style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">
+    📚 Publications
+  </h3>
 
   {% include base_path %}
 
   {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
   {% for post in sorted_pubs %}
-    {% if post.type != "domestic-conference" %}
-      {% include archive-single.html %}
-    {% endif %}
+    {% include archive-single.html %}
   {% endfor %}
+</section>
 
-  <h2>Domestic Conferences</h2>
+<!-- Awards & Honors Section -->
+<section style="margin-bottom: 20px;">
+  <h3 id="awards-honors" style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">
+    🏆 Awards & Honors
+  </h3>
 
-  {% for post in sorted_pubs %}
-    {% if post.type == "domestic-conference" %}
-      {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
-</div>
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">National Research Foundation of Korea Funding, NRF</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>September 2025 - September 2026</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Funding offered to outstanding master's students for conducting research projects</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Korean Government Scholarships, GIST College</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>March 2018 - August 2024</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Scholarship awarded to students studying in GIST</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Scholarship for Summer Session Abroad</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>June 2019 - August 2019</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Scholarship awarded to students studying abroad during a summer session</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">Navy AI Competition</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>June 2023 - August 2023</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Awarded drone object detecting competition hosted by Korean Navy</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <div style="color: #34495e; margin-bottom: 5px; font-weight: bold; font-size: 18px;">K-StartUp finals</div>
+    <p style="color: #7f8c8d; margin-bottom: 5px;"><strong>March 2023 - November 2023</strong></p>
+    <ul style="margin-left: 20px; color: #555;">
+      <li>Advanced to the finals of Korean largest start-up contest, 'K-StartUp', as ML researcher and back-end developer</li>
+    </ul>
+  </div>
+</section>
