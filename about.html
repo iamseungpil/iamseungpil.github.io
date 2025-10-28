@@ -1,0 +1,142 @@
+---
+layout: articles
+title: About
+---
+
+<style>
+.profile-section {
+  text-align: center;
+  margin: 3em 0 2em 0;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-info h1 {
+  margin: 0.5em 0;
+  font-size: 2em;
+}
+
+.profile-info p {
+  margin: 0.3em 0;
+  color: #666;
+}
+
+.profile-links {
+  margin-top: 1em;
+}
+
+.profile-links a {
+  margin: 0 0.5em;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+.about-text {
+  margin: 2em 0;
+  line-height: 1.8;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publications-section {
+  margin-top: 3em;
+}
+
+.publications-section h2 {
+  font-size: 1.8em;
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+</style>
+
+<div class="profile-section">
+  <img src="images/seungpil_profile.jpg" alt="Seungpil Lee" class="profile-image">
+
+  <div class="profile-info">
+    <h1>Seungpil Lee</h1>
+    <p>Master student in Gwangju Institute of Science and Technology</p>
+    <div class="profile-links">
+      <a href="mailto:iamseungpil@gm.gist.ac.kr">Email</a> |
+      <a href="https://scholar.google.com/citations?user=iPfrGWAAAAAJ&hl=ko" target="_blank">Google Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="about-text">
+  <p>
+    Nice to meet you. This is Seungpil Lee's website. Here, you will be able to review a brief portfolio and publications about me.
+  </p>
+
+  <p>
+    I'm a passionate student in Master's degree who embraces challenges in unfamiliar domains. Although my primary interest lies in the field of brain-inspired AI, I also have a broad curiosity that extends to other areas of artificial intelligence, including NLP and reinforcement learning. Additionally, I maintain a keen interest in interdisciplinary subjects such as cognitive science and STS.
+  </p>
+
+  <div class="image-grid">
+    <img src="images/diagonal-flip.gif" alt="Diagonal flip transformation">
+    <img src="images/horizontal-align.gif" alt="Horizontal alignment">
+    <img src="images/tetris.gif" alt="Tetris pattern">
+  </div>
+
+  <p>
+    I am currently solving visual reasoning benchmark, Abstraction and Reasoning Corpus (ARC) with <a href="https://sundong.kim/" target="_blank">Prof. Sundong Kim</a> in GIST. ARC is a kind of IQ test for computers - if we can solve this challenge, we might be able to develop AI with genuine reasoning capabilities.
+  </p>
+
+  <p>
+    Perhaps you'll soon meet an AI that surpasses human intelligence. You might find my name there. If you'd like to contact me before that happens, please check the contact information above!
+  </p>
+</div>
+
+<div class="publications-section">
+  <h2>Publications</h2>
+
+  {% include base_path %}
+
+  {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+  {% for post in sorted_pubs %}
+    {% if post.type != "domestic-conference" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+
+  <h2>Domestic Conferences</h2>
+
+  {% for post in sorted_pubs %}
+    {% if post.type == "domestic-conference" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+</div>
