@@ -80,7 +80,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-spaceship
   - jekyll-remote-theme
 
 # Include/Exclude files
