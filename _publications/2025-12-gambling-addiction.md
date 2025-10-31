@@ -1,6 +1,6 @@
 ---
 title: "Can Large Language Models Develop Gambling Addiction?"
-authors: "[Seungpil Lee&#42;](iamseungpil.github.io), [Donghyeon Shin](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), Yunjeong Lee and [**Sundong Kim†**](https://sundong.kim/)"
+authors: "[**Seungpil Lee&#42;**](iamseungpil.github.io), [Donghyeon Shin](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), Yunjeong Lee and [Sundong Kim†](https://sundong.kim/)"
 collection: publications
 permalink: /publication/2025-01-gambling-addiction
 excerpt: 'This study investigates whether Large Language Models can develop patterns of behavior analogous to gambling addiction through their decision-making processes and risk-taking behaviors.'

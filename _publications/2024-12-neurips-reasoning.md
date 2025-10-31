@@ -1,6 +1,6 @@
 ---
 title: "Reasoning Abilities of Large Language Models through the Lens of Abstraction and Reasoning (Extended Abstract of the below paper)"
-authors: "[Seungpil Lee&#42;](iamseungpil.github.io), [Woochang Sim&#42;](https://scholar.google.com/citations?user=vBmLpIUAAAAJ&hl=en), [Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), Sejin Kim and [**Sundong Kim†**](https://sundong.kim/)"
+authors: "[**Seungpil Lee&#42;**](iamseungpil.github.io), [Woochang Sim&#42;](https://scholar.google.com/citations?user=vBmLpIUAAAAJ&hl=en), [Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), Sejin Kim and [Sundong Kim†](https://sundong.kim/)"
 collection: publications
 teaser: images/neurips24w-llm.png
 permalink: /publication/2024-12-neurips-reasoning.md

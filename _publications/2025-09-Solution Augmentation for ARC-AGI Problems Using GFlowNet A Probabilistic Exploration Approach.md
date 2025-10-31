@@ -1,7 +1,7 @@
 ---
 title: "Solution Augmentation for ARC-AGI Problems Using GFlowNet: A Probabilistic Exploration Approach"
 collection: publications
-authors: "[Sanha Hwang](https://scholar.google.com/citations?user=DNIeCSMAAAAJ), [Seungpil Lee](iamseungpil.github.io), [Sejin Kim](https://sejinkimm.github.io/), and [**Sundong Kim†**](https://sundong.kim)"
+authors: "[Sanha Hwang](https://scholar.google.com/citations?user=DNIeCSMAAAAJ), [**Seungpil Lee**](iamseungpil.github.io), [Sejin Kim](https://sejinkimm.github.io/), and [Sundong Kim†](https://sundong.kim)"
 permalink: /publication/2025-09-Solution Augmentation for ARC-AGI Problems Using GFlowNet A Probabilistic Exploration Approach
 date: 2025-09-01
 venue: 'Transactions on Machine Learning Research'

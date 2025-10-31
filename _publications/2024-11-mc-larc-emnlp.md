@@ -1,6 +1,6 @@
 ---
 title: "From Generation to Selection: Findings of Converting Analogical Problem-Solving into Multiple-Choice Questions"
-authors: "[Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), [Seungpil Lee&#42;](iamseungpil.github.io), Klea Lena Kovacec, and [**Sundong Kim†**](https://sundong.kim/)"
+authors: "[Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), [**Seungpil Lee&#42;**](iamseungpil.github.io), Klea Lena Kovacec, and [Sundong Kim†](https://sundong.kim/)"
 collection: publications
 teaser: images/emnlp24-mclarc.png
 permalink: /publication/2024-11-mc-larc-emnlp.md

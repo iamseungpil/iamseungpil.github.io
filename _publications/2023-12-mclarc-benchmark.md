@@ -1,6 +1,6 @@
 ---
 title: "Regulation Using Large Language Models to Generate Synthetic Data for Evaluating Analogical Ability"
-authors: "[Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), [Seungpil Lee&#42;](iamseungpil.github.io), Klea Lena Kovacec, and [**Sundong Kim†**](https://sundong.kim/)"
+authors: "[Donghyeon Shin&#42;](https://scholar.google.com/citations?hl=en&user=J5BIlf8AAAAJ), [**Seungpil Lee&#42;**](iamseungpil.github.io), Klea Lena Kovacec, and [Sundong Kim†](https://sundong.kim/)"
 collection: publications
 teaser: images/ijcai24w-mclarc.png
 permalink: /publication/2023-12-mclarc-benchmark
