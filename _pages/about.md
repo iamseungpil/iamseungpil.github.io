@@ -14,7 +14,7 @@ Nice to meet you. This is Seungpil Lee's website. Here, you will be able to revi
   <img src="images/20241115_161350(1).jpg" alt="profile">
 </div>
 
-I'm passionate student in Master's degree who embraces challenges in unfamiliar domains. Although my primary interest lies in the field of brain-inspired AI, I also have a broad curiosity that extends to other areas of artificial intelligence, including NLP and reinforcement learning. Additionally, I maintain a keen interest in interdisciplinary subjects such as cognitive science and STS.
+I'm passionate student in Master's degree who embraces challenges in unfamiliar domains. Although my primary interest lies in the field of brain-inspired AI, I also have a broad curiosity that extends to other areas of artificial intelligence, including NLP and reinforcement learning. Additionally, I maintain a keen interest in interdisciplinary subjects such as cognitive science and STS. You can read more about how these interests connect in my [research philosophy](/research-philosophy/).
 
 <div class="image-grid">
   <img src="images/diagonal-flip.gif" alt="diagonal flip">

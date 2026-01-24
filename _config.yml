@@ -37,6 +37,7 @@ night_mode: "off"
 # Header pages
 header_pages:
   - about.html
+  - research-philosophy.md
 
 # Pagination
 paginate: 5
