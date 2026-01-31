@@ -38,6 +38,7 @@ night_mode: "off"
 header_pages:
   - about.html
   - research-philosophy.md
+  - press.md
 
 # Pagination
 paginate: 5

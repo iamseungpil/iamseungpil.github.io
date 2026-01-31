@@ -11,15 +11,15 @@ tags:
 
 <style>.post-related { display: none; }</style>
 
-## Motivation
-
-A striking paradox defines the current state of AI: GPT-4 passes the bar exam in the top 10%, yet fails at visual pattern recognition tasks that a three-year-old can solve. This gap between linguistic competence and genuine reasoning motivates my central research question — what is the nature of intelligence, and how does artificial reasoning fundamentally differ from human cognition?
-
 ## Core Philosophy
 
-My research operates on a single guiding principle: **AI serves as a mirror for understanding human intelligence.**
+<div style="background-color: #f8f9fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 20px; margin: 1.5em 0;">
+
+My research operates on a single guiding principle: <strong>AI serves as a mirror for understanding human intelligence.</strong>
 
 Rather than pursuing performance optimization alone, I investigate the cognitive mechanisms underlying both human and machine reasoning. This creates a productive feedback loop: insights from cognitive science inform how we probe AI systems, and the failures and successes of AI illuminate aspects of human cognition that were previously difficult to study.
+
+</div>
 
 ## Research Program: Three Questions
 
@@ -29,7 +29,7 @@ My work follows a coherent trajectory through three interconnected questions, ea
 
 To characterize this difference, I adopted the Language of Thought Hypothesis (LOTH) from cognitive science, which identifies three essential properties of human reasoning: logical coherence, compositionality, and productivity.
 
-<div style="text-align: center; margin: 2em 0;">
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-q1-reasoning.png" alt="Human reasoning vs LLM reasoning comparison" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Applying the Language of Thought framework: comparing human reasoning properties (left) with LLM performance on the same dimensions (right)</em></p>
 </div>
@@ -42,7 +42,7 @@ These findings, published in **ACM Transactions on Intelligent Systems and Techn
 
 The first study raised a methodological question: how can we precisely diagnose *where* model understanding fails? Traditional generation-based evaluation makes errors opaque — when a model produces a wrong answer, the source of failure remains hidden.
 
-<div style="text-align: center; margin: 2em 0;">
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-q2-mclarc.png" alt="MC-LARC: The benefit of multiple-choice for pinpointing errors" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Generation-based evaluation obscures failure modes; selection with contrastive options reveals the specific nature of misunderstanding</em></p>
 </div>
@@ -55,7 +55,7 @@ This work was published at **EMNLP Findings 2024**.
 
 While the first two questions examined reasoning deficits, an unexpected finding emerged: LLMs can develop behavioral patterns that are not merely suboptimal but *irrational* in ways that parallel known human cognitive biases.
 
-<div style="text-align: center; margin: 2em 0;">
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-q3-gambling.png" alt="LLM gambling addiction research questions" style="max-width: 80%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Investigating whether LLMs develop irrational decision-making patterns analogous to gambling addiction</em></p>
 </div>
@@ -64,27 +64,31 @@ I investigated whether LLMs can develop patterns resembling gambling addiction, 
 
 ## Methodology
 
+<div style="background-color: #f8f9fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 20px; margin: 1.5em 0;">
+
 All three projects share a common methodological approach: applying cognitive science frameworks to probe AI systems, then analyzing both the parallels and divergences with human cognition. This bidirectional analysis — using cognitive science to understand AI, and using AI to understand cognition — is the core of my research identity.
+
+</div>
 
 ## Future Directions
 
 My research is evolving from analyzing static reasoning to building adaptive agents, with *memory* as the bridging concept.
 
-<div style="text-align: center; margin: 2em 0;">
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-future-paradigm.jpg" alt="From Reasoning to Agents: The Mid-2025 Paradigm Shift" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Memory is what transforms a reasoning system into an agent: from static problem-solving to continuous interaction and learning</em></p>
 </div>
 
 Human learning derives its power not from single-instance reasoning but from the accumulation and reflection on experience — working memory, episodic memory, and metacognition.
 
-<div style="text-align: center; margin: 2em 0;">
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-future-memory.png" alt="Robot Memory vs Human Memory" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Current AI memory relies on inefficient database retrieval; human memory operates through efficient real-time generation</em></p>
 </div>
 
-I am currently developing the **TTFV (Test-Time For-Value) framework**, which applies data valuation techniques to test-time few-shot learning. TTFV measures the contribution of each example to compositional structure learning via a single forward pass — requiring no gradient computation. This approach mimics how humans extract abstract rules from minimal demonstrations.
+I am currently developing <strong>TTMG (Test-Time Memory Generation)</strong>, a generative memory framework that dynamically adapts to new problems at test time while keeping the core model parameters frozen. Inspired by how human memory reconstructs — rather than retrieves — stored information to fit the current context, TTMG uses a lightweight Weaver module to generate working, planning, and long-term memory representations in latent space, followed by a Structure Optimizer that refines these representations through gradient ascent on output confidence. Unlike RAG (which depends on retrieval quality and cannot create new patterns) or fine-tuning (which risks catastrophic forgetting), TTMG preserves pretrained capabilities entirely while enabling out-of-distribution adaptation.
 
-The broader goal is to develop agents that improve through interaction: systems that accumulate knowledge, recognize their own limitations, and actively seek information to fill gaps — ultimately closing the loop between understanding intelligence and building it.
+The broader goal is to develop agents that improve through interaction: systems that accumulate knowledge, reconstruct relevant experience on the fly, and adapt to unfamiliar situations — ultimately closing the loop between understanding intelligence and building it.
 
 ---
 
@@ -92,20 +96,20 @@ The broader goal is to develop agents that improve through interaction: systems 
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; margin-top: 1.5em;">
 
-<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em;">
-  <h4 style="margin-top: 0; font-size: 0.95em;"><a href="/publication/2025-03-18-TIST/">Reasoning Abilities of Large Language Models: In-Depth Analysis on the Abstraction and Reasoning Corpus</a></h4>
+<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em; background-color: #fafbfc; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+  <div style="font-weight: bold; font-size: 0.95em; margin-bottom: 0.4em;"><a href="/publication/2025-03-18-TIST/" style="color: #2c3e50; text-decoration: none;">Reasoning Abilities of Large Language Models: In-Depth Analysis on the Abstraction and Reasoning Corpus</a></div>
   <p style="font-size: 0.82em; color: #888; margin-bottom: 0.5em;">ACM TIST, 2024</p>
   <p style="font-size: 0.85em; color: #555;">Applied Language of Thought Hypothesis to analyze LLM abstract reasoning on ARC.</p>
 </div>
 
-<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em;">
-  <h4 style="margin-top: 0; font-size: 0.95em;"><a href="/publication/2024-11-mc-larc-emnlp/">From Generation to Selection: Findings of Converting Analogical Problem-Solving into Multiple-Choice Questions</a></h4>
+<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em; background-color: #fafbfc; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+  <div style="font-weight: bold; font-size: 0.95em; margin-bottom: 0.4em;"><a href="/publication/2024-11-mc-larc-emnlp/" style="color: #2c3e50; text-decoration: none;">From Generation to Selection: Findings of Converting Analogical Problem-Solving into Multiple-Choice Questions</a></div>
   <p style="font-size: 0.82em; color: #888; margin-bottom: 0.5em;">EMNLP Findings, 2024</p>
   <p style="font-size: 0.85em; color: #555;">Created MC-LARC benchmark to pinpoint where LLM understanding breaks down.</p>
 </div>
 
-<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em;">
-  <h4 style="margin-top: 0; font-size: 0.95em;"><a href="/publication/2025-01-gambling-addiction/">Can Large Language Models Develop Gambling Addiction?</a></h4>
+<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em; background-color: #fafbfc; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+  <div style="font-weight: bold; font-size: 0.95em; margin-bottom: 0.4em;"><a href="/publication/2025-01-gambling-addiction/" style="color: #2c3e50; text-decoration: none;">Can Large Language Models Develop Gambling Addiction?</a></div>
   <p style="font-size: 0.82em; color: #888; margin-bottom: 0.5em;">arXiv preprint, 2025</p>
   <p style="font-size: 0.85em; color: #555;">Discovered emergent cognitive biases in LLM decision-making resembling human gambling addiction.</p>
 </div>
