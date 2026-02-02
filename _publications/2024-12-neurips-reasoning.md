@@ -7,7 +7,7 @@ teaser: images/neurips24w-llm.png
 permalink: /publication/2024-12-neurips-reasoning.md
 excerpt: 'The existing methods for evaluating the inference abilities of Large Language Models (LLMs) have been results-centric, making it difficult to assess the inference process. We introduce a new approach using the Abstract and Reasoning Corpus (ARC) dataset to evaluate the inference and contextual understanding abilities of large language models in a process-centric manner. ARC demands rigorous logical structures for problem-solving, making it a benchmark that facilitates the comparison of model inference abilities with humans. Experimental results confirm that while large language models possess weak inference abilities, they still lag in terms of logical coherence, compositionality, and productivity. Our experiments highlight the reasoning capabilities of LLMs, proposing development paths for achieving human-level reasoning.'
 date: 2025-01-01
-venue: 'In NeurIPS Workshop on System-2 Reasoning at Scale, 2024'
+venue: 'In NeurIPS Workshop on System-2 Reasoning at Scale'
 siteurl: 'https://llm-on-arc.pages.dev/'
 paperurl: 'https://sundong.kim/assets/pdf/2024_NeurIPSW_LLMonARC.pdf'
 codeurl: 'https://github.com/GIST-DSLab/ARC_Prompt'

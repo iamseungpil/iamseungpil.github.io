@@ -7,7 +7,7 @@ teaser: images/emnlp24-mclarc.png
 permalink: /publication/2024-11-mc-larc-emnlp.md
 excerpt: "The MC-LARC dataset proposed in this study consists of 'one sentence describing the example input image from ARC' and 'five sentences explaining the problem-solving rules'. The image description sentence was written directly by humans, while the problem-solving rule sentences were created using GPT4-32k. Subsequently, an inference ability test experiment was conducted using MC-LARC to determine whether ChatGPT4 and humans could select appropriate descriptions for the given images."
 date: 2024-11-08
-venue: 'In EMNLP Findings, 2024'
+venue: 'In EMNLP Findings'
 paperurl: 'https://aclanthology.org/2024.findings-emnlp.392/'
 codeurl: 'https://github.com/GIST-DSLab/MC-LARC'
 siteurl: 'https://mc-larc.github.io/'
