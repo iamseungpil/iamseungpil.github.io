@@ -2,6 +2,7 @@
 title: "Extracting the core knowledge of ARC with the World Model"
 type: "domestic-conference"
 collection: publications
+pub_type: domestic
 permalink: /publication/2023-12-Extracting the core knowledge of ARC with the World Model
 excerpt: 'In this study, we design an experiment to verify that the World Model extracts core knowledge from the ARC dataset, and propose future research directions for utilizing this extracted core knowledge.'
 date: 2023-12-01

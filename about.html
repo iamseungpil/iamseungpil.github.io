@@ -106,11 +106,53 @@ title: About
   <p style="font-size: 14px; color: #777; font-style: italic; margin-bottom: 15px;">* denotes equal contribution</p>
 
   {% include base_path %}
-
   {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
-  {% for post in sorted_pubs %}
+
+  <!-- Journal Articles -->
+  {% assign journals = sorted_pubs | where: "pub_type", "journal" %}
+  {% if journals.size > 0 %}
+  <div style="color: #34495e; margin-top: 20px; margin-bottom: 12px; padding-left: 8px; border-left: 3px solid #2ecc71; font-size: 1.05em; font-weight: bold;">Journal Articles</div>
+  {% for post in journals %}
     {% include archive-single.html %}
   {% endfor %}
+  {% endif %}
+
+  <!-- Conference Papers -->
+  {% assign conferences = sorted_pubs | where: "pub_type", "conference" %}
+  {% if conferences.size > 0 %}
+  <div style="color: #34495e; margin-top: 20px; margin-bottom: 12px; padding-left: 8px; border-left: 3px solid #3498db; font-size: 1.05em; font-weight: bold;">Conference Papers</div>
+  {% for post in conferences %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
+
+  <!-- Workshop Papers -->
+  {% assign workshops = sorted_pubs | where: "pub_type", "workshop" %}
+  {% if workshops.size > 0 %}
+  <div style="color: #34495e; margin-top: 20px; margin-bottom: 12px; padding-left: 8px; border-left: 3px solid #9b59b6; font-size: 1.05em; font-weight: bold;">Workshop Papers</div>
+  {% for post in workshops %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
+
+  <!-- Preprints -->
+  {% assign preprints = sorted_pubs | where: "pub_type", "preprint" %}
+  {% if preprints.size > 0 %}
+  <div style="color: #34495e; margin-top: 20px; margin-bottom: 12px; padding-left: 8px; border-left: 3px solid #e67e22; font-size: 1.05em; font-weight: bold;">Preprints</div>
+  {% for post in preprints %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
+
+  <!-- Domestic Conference Papers -->
+  {% assign domestics = sorted_pubs | where: "pub_type", "domestic" %}
+  {% if domestics.size > 0 %}
+  <div style="color: #34495e; margin-top: 20px; margin-bottom: 12px; padding-left: 8px; border-left: 3px solid #95a5a6; font-size: 1.05em; font-weight: bold;">Domestic Conference Papers</div>
+  {% for post in domestics %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
+
 </section>
 
 <!-- Awards & Honors Section -->
