@@ -31,26 +31,6 @@ Perhaps you'll soon meet an AI that surpasses human intelligence. You might find
 
 {% include base_path %}
 
-# Press Coverage
-
-<div style="margin-top: 1.5em;">
-
-<div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2em; margin-bottom: 1.2em; background-color: #fafbfc; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
-  <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-    <div style="font-weight: bold; font-size: 1em;">AI can show gambling addiction-like behaviour under risk: Expert</div>
-    <span style="font-size: 0.82em; color: #888; white-space: nowrap;">February 3, 2026</span>
-  </div>
-  <p style="font-size: 0.85em; color: #888; margin: 0.3em 0 0.6em 0;">SiGMA News · Rajashree Seal</p>
-  <p style="font-size: 0.9em; color: #555; margin-bottom: 0.6em;">
-    Coverage of our research on LLM gambling addiction behavior. The article discusses how LLMs exhibit human-like addiction patterns including loss chasing, gambler's fallacy, and illusion of control when given autonomy in gambling-style environments.
-  </p>
-  <p style="font-size: 0.85em; margin: 0;">
-    <a href="https://sigma.world/news/ai-can-show-gambling-addiction-like-behaviour-under-risk-expert/" target="_blank" style="color: #3498db; text-decoration: none;">Read article →</a>
-  </p>
-</div>
-
-</div>
-
 # Publications
 {% for post in site.publications reversed %}
   {% if post.type != "domestic-conference" %}
