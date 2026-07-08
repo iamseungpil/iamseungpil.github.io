@@ -6,7 +6,7 @@ pub_type: preprint
 permalink: /publication/2026-05-from-noise-to-diversity
 excerpt: 'We study Random Soft Prompts — random embedding vectors appended to the input that, despite carrying no learned content, match optimized soft prompts on math reasoning. The gain comes from how the never-seen-before random position flattens early-token distributions and branches reasoning trajectories, lifting Pass@N at inference and translating into practical DAPO training improvements.'
 date: 2026-05-12
-venue: 'arXiv preprint'
+venue: 'arXiv preprint · Accepted at ICML Mechanistic Interpretability Workshop 2026 (Spotlight)'
 paperurl: 'https://arxiv.org/abs/2605.11936'
 codeurl: 'https://github.com/heejunkim00/RSP'
 teaser: images/rsp26.png
