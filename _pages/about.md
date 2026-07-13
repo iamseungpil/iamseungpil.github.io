@@ -14,7 +14,9 @@ Nice to meet you. This is Seungpil Lee's website. Here, you will be able to revi
   <img src="images/20241115_161350(1).jpg" alt="profile">
 </div>
 
-I study AI in two directions — from AI back to the human mind it imitates, and from the mind forward into AI design. My current focus is the cognition of intelligent systems, studied through LLMs. Mechanistic interpretability (sparse autoencoders) keeps me honest about mechanisms, and memory-augmented agents that learn at test time are the current testbed. I came in through literature and philosophy of mind, so cognitive science and STS sit naturally alongside the engineering. You can read more about how these interests connect in my [research philosophy](/research-philosophy/).
+I study AI in two directions — from AI back to the human mind it imitates, and from the mind forward into AI design. I came in through literature and philosophy of mind, so cognitive science and STS sit naturally alongside the engineering. You can read more about how these interests connect in my [research philosophy](/research-philosophy/).
+
+My work so far has diagnosed where LLMs and humans part ways, at three levels: reasoning ([ACM TIST](https://arxiv.org/abs/2403.11793) — models mistake a familiar-looking rule for the rule itself), understanding ([EMNLP 2024 Findings](https://aclanthology.org/2024.findings-emnlp.392/) — change the evaluation format and hidden gaps appear), and decision-making ([arXiv](https://arxiv.org/abs/2509.22818), covered by Newsweek — human-like gambling biases traceable to internal circuits). The three diagnoses converge on one missing piece: **a model that never watches its own generation gets pulled by its priors into familiar pitfalls**.
 
 <div class="image-grid">
   <img src="images/diagonal-flip.gif" alt="diagonal flip">
@@ -22,9 +24,9 @@ I study AI in two directions — from AI back to the human mind it imitates, and
   <img src="images/tetris.gif" alt="tetris">
 </div>
 
-I am currently solving visual reasoning benchmark, Abstraction and Reasoning Corpus (ARC) with [Prof. Sundong](https://sundong.kim/) in GIST. ARC is a kind of IQ test for computers - if we can solve this challenge, we might be able to develop AI with genuine reasoning capabilities.
+So my current research — as an M.S. student with [Prof. Sundong Kim](https://sundong.kim/) at GIST and a research intern at Microsoft Research Asia — explores the fix at three points: injecting diversity at inference before a reasoning path hardens (co-first author, ICML workshop spotlight), training models so that self-checks are rewarded only when they actually move beliefs toward the answer, and agent harnesses that accumulate only execution-verified skills. The three converge on the capability I ultimately want to build into models: **metacognition** — and, further out, the question of machine self-awareness.
 
-Perhaps you'll soon meet an AI that surpasses human intelligence. You might find my name there. If you'd like to contact me before that happens, please check the contact information on the left!
+If any of this resonates, I'd love to hear from you — contact information is on the left.
 
 
 <hr style="height:1px; border:none; background-color:#e5e5e5;">

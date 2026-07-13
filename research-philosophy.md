@@ -23,6 +23,11 @@ So I work in two directions at once. I read a model's behavior and its internals
 
 </div>
 
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
+  <img src="/images/rp-mirror.png" alt="AI as a mirror: cognitive science reads the model, and the insight returns to model design" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>The whole program in one loop: read the model with cognitive science, and return the insight to model design.</em></p>
+</div>
+
 ## Research Program: Three Questions
 
 My work so far has followed three questions about machine thinking, each one growing out of the last. They run from how a model reasons, to what it actually understands, to why it sometimes works against its own interest.
@@ -60,30 +65,30 @@ The first two questions were about gaps in reasoning. The third one caught me of
 
 I looked at whether a model could slide into something like gambling addiction. It could. In a slot-machine setup, the models showed the illusion of control, chased their losses, and fell for the gambler's fallacy, and this was not just parroting the training data. The gap between fixed and variable betting ran about 20%, steady enough that the bias looks built in rather than random. Using Sparse Autoencoders (SAE), I could even find the internal features that lit up when a model made these calls.
 
-## Methodology
+## What the Three Questions Converged On
 
 <div style="background-color: #f8f9fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 20px; margin: 1.5em 0;">
 
-All three projects work the same way. I take a frame from cognitive science, point it at a model, and watch where the model lines up with human thinking and where it pulls apart. That two-way move, cognitive science to read AI and AI to read cognition, is really the whole of how I work.
+Lay the three diagnoses side by side and they say one thing. A model mistakes a familiar-looking rule for the rule it memorized. It picks answers from cues rather than understanding. Its biases live in its circuits, not just its outputs. In every case the model is being <strong>pulled by its priors into a familiar pit</strong> — and it never notices, because nothing inside it is watching. I read the root of all three failures as the same missing piece: <strong>metacognition</strong>. A model that cannot inspect its own generation cannot resist the pull.
 
 </div>
 
 ## Future Directions
 
-Those three questions were one question wearing different clothes: what is it to think? Each time I came at it from the same three angles, the **benchmark** that measures a skill, the **training** that shapes it, and the **architecture** that holds it. Now I want to aim those same three tools at a harder question: what would it take for a model to be aware of its own thinking?
-
-I don't mean an inner spark of experience. I mean **metacognition**, the ordinary work a mind does keeping tabs on itself. Sensing when its own answer is shaky. Checking that answer against what it actually represents inside. Catching the spot where the reasoning slipped. Carrying its failures forward instead of forgetting them. Holding a rough self-model of how it tends to think.
+That diagnosis sets the agenda. I am exploring the fix at three points where a system can intervene on itself, and the three prescriptions converge on one capability.
 
 <div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
-  <img src="/images/rp-future-consciousness.png" alt="From thinking to self-consciousness: the same benchmark, training, and architecture approach, aimed at machine metacognition" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>The same three tools (benchmark, training, architecture), aimed from thinking toward self-consciousness.</em></p>
+  <img src="/images/rp-pitfall-three.png" alt="One disease, three prescriptions: a model without metacognition is pulled into familiar pitfalls; interventions at inference, training, and the agent loop converge on metacognition" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>One disease, three prescriptions — and where they converge.</em></p>
 </div>
 
-Why think this is buildable rather than mystical hand-waving? Because of a deflationary reading I borrow from Daniel Dennett. On his Multiple Drafts Model there is no single inner stage where consciousness happens. The self that seems to sit behind our thoughts is really a **"center of narrative gravity,"** a story a system keeps telling about itself. If that is what selfhood amounts to, then a habit of self-description is something you can actually measure, train, and design for. That is the bet behind the three directions below. All of them are early, and a few are honestly still sketches.
+- **At inference: inject diversity before the path hardens.** In recent work (co-first author, spotlighted at an ICML workshop) we showed that injecting fresh random vectors into a model's input — with zero training — opens up early token choices that temperature sampling can never reach, so repeated attempts explore genuinely different reasoning paths. The next step is to let the model's own uncertainty signals decide *when* to branch, turning indiscriminate diversity into selective exploration.
+- **In training: reward the self-checks that actually work.** Ask a model to double-check itself and it learns to *perform* checking without fixing anything. I am building training signals that measure whether a self-check really moved the model's belief toward the right answer, and pay reward only for that movement. It already curbs overconfidence, and the gains concentrate exactly where the pitfall bites hardest — the difficult problems. The harder half, still open, is teaching the model *when* to check.
+- **In the agent loop: accumulate only verified knowledge.** When priors are the contamination, an external harness can do the watching: treat every dead-end as a signal, mine candidate skills from it, and let only the candidates that survive real execution enter the library. The harness becomes a growing cognitive structure rather than a crutch — and the next question is whether skills verified in one world transfer to another.
 
-- **A benchmark for holding onto who you are.** Self-reports are cheap. A model will tell you it is careful and consistent whether or not it is. So I would rather watch behavior. Can a model work out its own operating principles, its values and priorities, from how it has acted, and stick to them when the setting shifts and the pressure climbs? Stay consistent across very different situations and that consistency is the evidence. Fall apart, and the self-model was never really there.
-- **Training a model to check its own work.** Most correction comes from outside: a reward, a label, a human saying "wrong." I want the checking to move inside, so a model lays out its own doubts and fixes as part of reasoning, not after the fact. Getting a model to stop being so sure of itself is the easy half. Getting it to do that without giving up accuracy is the hard half, and the part I don't have yet.
-- **Building the self-monitoring in, not bolting it on.** A model that revises itself needs somewhere to keep what it learns mid-task and some way to go back over an answer before it commits. I'm drawn to designs that update memory while the model is still thinking and let it pass over its own output again in place. Under all three directions sits the same tool, mechanistic interpretability: reading the internal circuits to check whether self-monitoring is really happening, or whether the model just learned to say it is.
+The three prescriptions meet in a model that can **watch its own thinking**: notice when its answer and its internal representations disagree, and stop or repair itself. That is metacognition — the ordinary work a mind does keeping tabs on itself — and it is where this program points next: sensing when an answer is shaky, checking it against what the model actually represents inside, catching the spot where the reasoning slipped, and carrying failures forward instead of forgetting them.
+
+Why think this is buildable rather than mystical hand-waving? Because of a deflationary reading I borrow from Daniel Dennett. On his Multiple Drafts Model there is no single inner stage where consciousness happens. The self that seems to sit behind our thoughts is really a **"center of narrative gravity,"** a story a system keeps telling about itself. If that is what selfhood amounts to, then a habit of self-description is something you can actually measure, train, and design for — and the question quietly grows from metacognition toward self-consciousness. Under all three prescriptions sits the same tool, mechanistic interpretability: reading the internal circuits to check whether self-monitoring is really happening, or whether the model just learned to say it is.
 
 None of this stays inside the machine, and that is why it matters to me. The arrows run both ways. Going from AI to people, a model that watches its own thinking becomes a kind of lab bench for the human questions I care about: how we reason, how addiction takes hold, how memory and self-awareness work. Over a longer horizon I would like that to reach into medicine, counseling, and education. Going the other way, I want the work out in the open: evaluation protocols, data, and code that anyone can rerun and pick apart, audits that catch risks to vulnerable people early, while a harm like gambling or a cognitive bias is still forming inside the model, and Korean-language resources for the parts of my own context that English-first benchmarks quietly skip. A model that can check itself knows its own problem better, and can stop or back up when what it says drifts from what it represents. Memory is what turned a reasoning system into an agent. A steady habit of self-description might be what turns an agent into one that knows, even a little, that it is thinking at all.
 
