@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Nice to meet you. I study AI in two directions: understanding people from AI, and improving AI from people. So far, all of my work has circled a single question. What is it to think? I probe how large language models reason, understand, and decide, and where each of those breaks down. I read them in the language of cognitive science. I first chased that question under [Prof. Sundong Kim](https://sundong.kim/), working through ARC-AGI, a benchmark of abstract visual reasoning that plays like an IQ test, and these days I carry that question forward as a research intern at Microsoft Research Asia.
+Nice to meet you. I study AI in two directions: understanding people from AI, and improving AI from people. So far, all of my work has circled a single question. What is it to think? I probe how large language models reason, understand, and decide, and where each of those breaks down. I read them in the language of cognitive science. I first chased that question under [Prof. Sundong Kim](https://sundong.kim/), working through ARC-AGI, a benchmark of abstract visual reasoning that plays like an IQ test. I took it with me to Microsoft Research Asia for a research internship, and these days I carry that question forward as a research intern at LG AI Research.
 
 <div class="content-container">
   <img src="images/20241115_161350(1).jpg" alt="profile">
