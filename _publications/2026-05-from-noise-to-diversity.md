@@ -2,19 +2,19 @@
 title: "From Noise to Diversity: Random Embedding Injection in LLM Reasoning"
 authors: "Heejun Kim&#42;, [**Seungpil Lee&#42;**](iamseungpil.github.io), Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim†, [Sundong Kim†](https://sundong.kim/)"
 collection: publications
-pub_type: preprint
+pub_type: conference
 permalink: /publication/2026-05-from-noise-to-diversity
 excerpt: 'We study Random Soft Prompts — random embedding vectors appended to the input that, despite carrying no learned content, match optimized soft prompts on math reasoning. The gain comes from how the never-seen-before random position flattens early-token distributions and branches reasoning trajectories, lifting Pass@N at inference and translating into practical DAPO training improvements.'
-date: 2026-05-12
-venue: 'arXiv preprint · Accepted at ICML Mechanistic Interpretability Workshop 2026 (Spotlight)'
+date: 2026-12-08
+venue: 'In NeurIPS (earlier version at ICML Mechanistic Interpretability Workshop 2026, Spotlight)'
 paperurl: 'https://arxiv.org/abs/2605.11936'
 codeurl: 'https://github.com/heejunkim00/RSP'
 teaser: images/rsp26.png
 bibtex_content: |
-  @article{RSP_arXiv2026,
+  @inproceedings{RSP_NeurIPS2026,
     title = {{From Noise to Diversity: Random Embedding Injection in LLM Reasoning}},
     author = {Kim, Heejun and Lee, Seungpil and Yeom, Jewon and Sok, Jaewon and Park, Seonghyeon and Park, Jeongjae and Kim, Taesup and Kim, Sundong},
-    journal = {arXiv preprint arXiv:2605.11936},
+    booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
     year = {2026},
   }
 ---
