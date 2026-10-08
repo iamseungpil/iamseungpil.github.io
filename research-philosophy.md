@@ -93,20 +93,18 @@ In the model's explanations of its own decisions (its self-description), phrases
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Testing whether a model can drift into gambling-addiction-like behavior.</em></p>
 </div>
 
-## Limits and Hypothesis
-
-The failures in all three areas converge. The model was pulled toward familiar solutions in reasoning, toward the look of the options in understanding, and toward the risk that freedom of choice invites in decision-making, and I could not test whether it noticed that pull on its own.
-
-<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
-  <img src="/images/rp-pitfall-three.png" alt="One disease, three prescriptions: a model without metacognition is pulled into familiar pitfalls; interventions at inference, training, and the agent loop converge on metacognition" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>One disease, three prescriptions, and where they converge.</em></p>
-</div>
+### Attempts and Limits
 
 Both attempts to reduce this pull helped, but both depended on a check from outside the model. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions (<a href="https://arxiv.org/abs/2605.11936">Kim & Lee et al., NeurIPS 2026</a>). When solutions are more varied, a correct one is more likely to appear.
 
 The other was a framework in which an AI agent, one that acts on its own to solve problems, looks back at its own attempt when it gets stuck and rewrites its solving tips (a memo of how to approach problems). In this framework too, whether the reflection was right was judged from outside.
 
 In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. The noticing was done for the model, from outside. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made.
+
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
+  <img src="/images/rp-pitfall-three.png" alt="One disease, three prescriptions: a model without metacognition is pulled into familiar pitfalls; interventions at inference, training, and the agent loop converge on metacognition" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>One disease, three prescriptions, and where they converge.</em></p>
+</div>
 
 ## Where I Am Heading
 
