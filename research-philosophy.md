@@ -62,7 +62,7 @@ The self shows itself in speaking and judging about oneself. It is too large a t
 
 ## Earlier Research: Do Models Think Like People?
 
-So I split thinking into three areas, reasoning, understanding, and decision-making, and examined the behavior of large language models (models like ChatGPT). This is research on the human-to-AI direction.
+To explore what thinking is, in my earlier research I split thinking into three areas, reasoning, understanding, and decision-making, and examined the behavior of large language models (models like ChatGPT). I found that in every area, models were excessively influenced by their learned data or by the prompt, a pitfall.
 
 ### Reasoning: Do Models Compose Rules?
 
@@ -84,7 +84,7 @@ The models appeared to lean on surface cues more than on understanding. On a tes
 
 ### Decision-Making: Do Models Act Like Gamblers?
 
-When the model set its own bet amount and goal, risky choices increased, and the pattern looked like gambling addiction. The experiment was a slot machine designed to lose money on average, and each round I compared a condition where the model sets the amount and goal with a condition where they are assigned.
+The models appeared to be pulled by a bias that resembles gambling addiction. When the model set its own bet amount and goal, risky choices increased. The experiment was a slot machine designed to lose money on average, and each round I compared a condition where the model sets the amount and goal with a condition where they are assigned.
 
 In the model's explanations of its own decisions (its self-description), expressions resembling two concepts from gambling psychology sometimes appeared. The illusion of control is believing you control a chance outcome, and loss chasing is raising your bets to win back lost money. But I could not confirm whether those explanations are the real reasons, and I take up that problem below in "Current Research."
 
@@ -95,19 +95,19 @@ In the model's explanations of its own decisions (its self-description), express
 
 ## Limits of My Earlier Research and a Hypothesis
 
-The failures in all three areas converge on the same question: will a model notice what is influencing it when it goes wrong? In reasoning, the model seemed to repeat familiar solutions; in understanding, accuracy dropped when cues were reduced; in decision-making, risky choices increased. But in all three, I could not test whether the model noticed that influence on its own.
+The failures in all three areas converge. In reasoning the model was pulled toward familiar solutions, in understanding toward surface cues, and in decision-making toward a bias that resembles gambling addiction, and I could not test whether the model noticed that pull on its own.
 
-The two attempts to reduce these failures reached the same question. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions. When solutions are more varied, a correct one is more likely to appear.
+The two attempts to reduce this pull left the same point open. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions. When solutions are more varied, a correct one is more likely to appear.
 
 The other was a framework in which an AI agent, one that acts on its own to solve problems, looks back at its own attempt when it gets stuck and rewrites its solving tips (a memo of how to approach problems). In this framework too, whether the reflection was right was judged from outside.
 
-In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. The noticing was done for the model, from outside. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made. That link is my own assumption.
+In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. The noticing was done for the model, from outside. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made.
 
 ## Where I Am Heading: From AI Back to Humans
 
 ### Current Research: Metacognition in Models
 
-To test this hypothesis, I am working on checking for metacognition inside models. Of the three questions below, the first two ask whether a model can notice and fix its own errors without outside verification, and the third asks whether its self-description guides its behavior.
+To test this hypothesis, I am working on checking for metacognition inside models. The goal is for a model to notice and correct, on its own, the pull seen in the three areas, and I split this into three questions. Of the three questions below, the first two ask whether a model can notice and fix its own errors without outside verification, and the third asks whether its self-description guides its behavior.
 
 The first is whether a model notices where it may be wrong. I look at whether signals inside the model (values such as how low the probability of its answer is) show where it may go wrong. If they do, the next step is to make the model use those signals itself.
 
