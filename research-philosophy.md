@@ -105,6 +105,11 @@ In both attempts, checking whether an answer was right and deciding whether to a
 
 ## Where I Am Heading
 
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
+  <img src="/images/rp-pitfall-three.png" alt="One disease, three prescriptions: a model without metacognition is pulled into familiar pitfalls; interventions at inference, training, and the agent loop converge on metacognition" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>One disease, three prescriptions, and where they converge.</em></p>
+</div>
+
 ### Current Research
 
 To test this hypothesis, I am working on checking for metacognition inside models. The goal is for a model to notice and correct, on its own, the pull seen in the three areas, and I split this into three questions. Of the three questions below, the first two ask whether a model can notice and fix its own errors without outside verification, and the third asks whether its self-description guides its behavior.
