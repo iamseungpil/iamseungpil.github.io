@@ -33,10 +33,25 @@ image: /images/seungpil_profile.jpg
     That is my research motto. My long-standing question has been how an intelligent system works, so rather than simply raising performance, I do research to understand how intelligence works at its core. Guided by this philosophy, my earlier work modeled human intelligence and used what I learned along the way to improve AI. Today, building on that philosophy and under the guidance of <a href="https://sundong.kim/" target="_blank" style="color: #3498db; text-decoration: none;">Prof. Sundong Kim</a>, I mainly work on ARC-AGI, a visual puzzle benchmark in which the task is to find a rule from a few examples.
   </p>
 
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin: 1.5em 0;">
-    <img src="images/diagonal-flip.gif" alt="Diagonal flip transformation" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <img src="images/horizontal-align.gif" alt="Horizontal alignment" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <img src="images/tetris.gif" alt="Tetris pattern" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <style>
+    .mirror-anim { position: relative; margin: 1.5em 0; }
+    .mirror-anim img { display: block; width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .mirror-anim svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .mirror-anim .flow { fill: none; stroke: #3498db; stroke-width: 18; stroke-linecap: round; stroke-dasharray: 0.14 1; stroke-dashoffset: 0.14; opacity: 0.75; }
+    .mirror-anim .flow-a { animation: mirror-flow 6s linear infinite; }
+    .mirror-anim .flow-b { animation: mirror-flow 6s linear infinite; animation-delay: 3s; }
+    .mirror-anim .glow { fill: #3498db; opacity: 0; animation: mirror-glow 6s ease-in-out infinite; }
+    @keyframes mirror-flow { 0% { stroke-dashoffset: 0.14; opacity: 0.75; } 45% { stroke-dashoffset: -1; opacity: 0.75; } 46%, 100% { stroke-dashoffset: -1; opacity: 0; } }
+    @keyframes mirror-glow { 0%, 100% { opacity: 0; } 25%, 75% { opacity: 0.16; } 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .mirror-anim .flow, .mirror-anim .glow { animation: none; opacity: 0; } }
+  </style>
+  <div class="mirror-anim">
+    <img src="images/rp-mirror.png" alt="AI as a mirror: cognitive science reads the model, and the insight returns to model design">
+    <svg viewBox="0 0 1600 893" preserveAspectRatio="none" aria-hidden="true">
+      <rect class="glow" x="652" y="198" width="300" height="498" rx="34"/>
+      <path class="flow flow-a" pathLength="1" d="M 435 205 C 515 60, 900 5, 1190 250"/>
+      <path class="flow flow-b" pathLength="1" d="M 1110 700 C 1050 860, 650 905, 452 700"/>
+    </svg>
   </div>
 
   <p style="font-size: 16px; color: #555; line-height: 1.6; margin: 0;">

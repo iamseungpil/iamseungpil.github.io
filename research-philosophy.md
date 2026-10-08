@@ -17,17 +17,22 @@ tags:
 
 <strong>"From humans to AI, and from AI back to humans." That is my research motto.</strong>
 
-If I build a model of human intelligence and test it, I can understand our own intelligence better, and I can use what I learn to improve AI. So far, I have used concepts from cognitive science and psychology to read and evaluate the behavior of language models. Using what I learn from models to ask questions about people again is what I plan to do from here. I want to know how intelligence works. Below, in order, are why I came to hold this philosophy, my earlier research, and where I am heading.
+If I implement humanlike intelligence in AI and test it, I can understand our own intelligence better, and that understanding in turn makes AI more beneficial to people. Over my past research, I have read and evaluated the behavior of models using concepts from cognitive science and psychology, and tried to improve AI through that. From here on too, I want to do research to understand the nature of intelligence better under the same philosophy. Below, I explain why I came to hold this philosophy, what I found in my earlier research, and where my research is heading.
 
+</div>
+
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
+  <img src="/images/rp-mirror.png" alt="AI as a mirror: cognitive science reads the model, and the insight returns to model design" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>The whole program in one loop: read the model with cognitive science, and return the insight to model design.</em></p>
 </div>
 
 ## Why I Hold This Philosophy
 
-I have always wondered how intelligence works, and from there I also came to wonder how the consciousness and self of the "I" who uses that intelligence work.
+I have always wondered how intelligence works, and from there I also came to wonder how the consciousness and self of the "I" who uses that intelligence work. Along the way, I came across a few books, by Dennett, Hofstadter, Kim, and others, that left a deep mark on me.
 
-On this question, I think consciousness and the self are not a soul or spirit sitting separately inside the body, but a special kind of thought pattern (a way in which thinking is put together). The philosopher Daniel Dennett saw the self not as a separate entity but as a story a system keeps telling about itself (a self-description). Douglas Hofstadter described the "I" as a pattern that arises from a loop of symbols in the brain that point back at themselves.
+I think consciousness and the self are not a soul or spirit sitting separately inside the body, but a special kind of thought pattern (a way in which thinking is put together). The philosopher Daniel Dennett saw the self not as a separate entity but as a story a system keeps telling about itself (a self-description). Douglas Hofstadter described the "I" as a pattern that arises from a loop of symbols in the brain that point back at themselves.
 
-If a thought pattern shows itself in behavior, it can be tested. Alan Turing replaced the vague question of whether machines think with a test: can a machine converse in a way that cannot be told apart from a person? That opened a path to testing intelligence through behavior. Jaegwon Kim held that a mind defined by what it does, as beliefs and desires are, can be explained by the function that does it. Their ideas support only this much: that such thinking can be compared between models and people. That thought patterns show up in behavior is my own assumption.
+I think thought patterns can be tested through behavior, which lets us compare models and people. This is possible if thought patterns show themselves in behavior, and that is my own assumption. Alan Turing replaced the vague question of whether machines think with a test: can a machine converse in a way that cannot be told apart from a person? That opened a path to testing intelligence through behavior. Jaegwon Kim held that a mind defined by what it does, as beliefs and desires are, can be explained by the function that does it. That is as far as their ideas support me.
 
 This view rests on an assumption and has limits. I assume that a thought pattern is determined not by what it is made of but by how it is put together, and my own research cannot test that assumption. Kim set aside the felt quality of sensation as something function cannot explain, and Francisco Varela argued that mind arises not from computation inside the brain but from the activity of a living body exchanging with its environment. If Varela is right, my assumption shakes. I do not know whether the feel of sensation can be explained as a thought pattern either. So I look only at how much models and people share in thinking that shows itself in speech and judgment, and I leave sensory experience and the activity of the body out of scope.
 
@@ -61,7 +66,7 @@ So I split thinking into three areas, reasoning, understanding, and decision-mak
 
 ### Reasoning: Do Models Compose Rules?
 
-I looked at this with ARC puzzles. ARC is a collection of puzzles in which you find a visual rule from a few examples. I took a cognitive-science hypothesis, that people reason by composing short rules (the Language of Thought Hypothesis), as the frame for evaluation. When I gave problems built from the same rule but with a different look, accuracy dropped sharply on many tasks, and models struggled most on tasks that require combining several rules. A model that understood the rule should still solve the problem when the look changes, so the models appear to repeat familiar solutions instead of composing rules.
+The models appeared to repeat familiar solutions instead of composing rules. ARC is a collection of puzzles in which you find a visual rule from a few examples. When I gave problems built from the same rule but with a different look, accuracy dropped sharply on many tasks, and models struggled most on tasks that require combining several rules. A model that understood the rule should still solve the problem when the look changes. The frame for evaluation was a cognitive-science hypothesis, the Language of Thought Hypothesis, that human reasoning rests on three properties, logical coherence, compositionality, and productivity, and under this frame the models fell short of people.
 
 <div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-q1-reasoning.png" alt="Human reasoning vs LLM reasoning comparison" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -70,13 +75,18 @@ I looked at this with ARC puzzles. ARC is a collection of puzzles in which you f
 
 ### Understanding: Do Models Understand Without Cues?
 
-If a model writes its answer directly, it is hard to tell whether it solved the problem by understanding. So I turned ARC puzzles into a multiple-choice benchmark, MC-LARC. With multiple choice, I can vary the options and tell whether the model chose by understanding or by cues. A correct option that is conspicuously long is an example of such a cue. On a test where such surface cues were reduced, the model's accuracy dropped and it fell far behind people.
+The models appeared to lean on surface cues more than on understanding. On a test where cues such as a conspicuously long correct option were reduced, the models' accuracy dropped and they fell far behind people. This test turns ARC puzzles into a multiple-choice benchmark, MC-LARC. If a model writes its answer directly, it is hard to tell whether it solved the problem by understanding, but with multiple choice I can vary the options and tell whether the model chose by understanding or by cues.
+
+<div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
+  <img src="/images/rp-q2-mclarc.png" alt="MC-LARC: The benefit of multiple-choice for pinpointing errors" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Generation hides where a model goes wrong; a contrastive multiple-choice format brings the specific mistake into view.</em></p>
+</div>
 
 ### Decision-Making: Do Models Act Like Gamblers?
 
-Starting from the question of whether language models, like people, can gamble, I built a slot machine experiment designed to lose money on average. I compared a condition where the model sets the bet amount and goal each round with a condition where they are assigned, and risky choices increased when the model set them.
+When the model set its own bet amount and goal, risky choices increased, and the pattern looked like gambling addiction. The experiment was a slot machine designed to lose money on average, and each round I compared a condition where the model sets the amount and goal with a condition where they are assigned.
 
-I read that pattern through two concepts from gambling psychology. The illusion of control is believing you control a chance outcome, and loss chasing is raising your bets to win back lost money. In the model's explanations of its own decisions (its self-description), expressions resembling both sometimes appeared. But I could not confirm whether those explanations are the real reasons, and I take up that problem below in "Current Research."
+In the model's explanations of its own decisions (its self-description), expressions resembling two concepts from gambling psychology sometimes appeared. The illusion of control is believing you control a chance outcome, and loss chasing is raising your bets to win back lost money. But I could not confirm whether those explanations are the real reasons, and I take up that problem below in "Current Research."
 
 <div style="text-align: center; margin: 2em 0; background-color: #fafbfc; border-radius: 8px; padding: 1em;">
   <img src="/images/rp-q3-gambling.png" alt="LLM gambling addiction research questions" style="max-width: 80%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -85,13 +95,13 @@ I read that pattern through two concepts from gambling psychology. The illusion 
 
 ## Limits of My Earlier Research and a Hypothesis
 
-Across the three areas, the model seemed to repeat familiar solutions in reasoning, lost accuracy when cues were reduced in understanding, and took more risky choices in decision-making. The reason is not yet clear.
+The failures in all three areas converge on the same question: will a model notice what is influencing it when it goes wrong? In reasoning, the model seemed to repeat familiar solutions; in understanding, accuracy dropped when cues were reduced; in decision-making, risky choices increased. But in all three, I could not test whether the model noticed that influence on its own.
 
-I tried two ways to reduce these failures. One was to inject random vectors (bundles of numbers) into the input so the model produces different solutions. When solutions are more varied, a correct one is more likely to appear.
+The two attempts to reduce these failures reached the same question. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions. When solutions are more varied, a correct one is more likely to appear.
 
 The other was a framework in which an AI agent, one that acts on its own to solve problems, looks back at its own attempt when it gets stuck and rewrites its solving tips (a memo of how to approach problems). In this framework too, whether the reflection was right was judged from outside.
 
-In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made. That link is my own assumption.
+In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. The noticing was done for the model, from outside. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made. That link is my own assumption.
 
 ## Where I Am Heading: From AI Back to Humans
 
