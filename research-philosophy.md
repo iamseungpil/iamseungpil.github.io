@@ -26,7 +26,7 @@ If I implement humanlike intelligence in AI and test it, I can understand our ow
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>The whole program in one loop: read the model with cognitive science, and return the insight to model design.</em></p>
 </div>
 
-## Why I Hold This Philosophy
+## Why This Philosophy
 
 I have always wondered how intelligence works, and from there I also came to wonder how the consciousness and self of the "I" who uses that intelligence work. Along the way, I came across a few books, by Dennett, Hofstadter, Kim, and others, that left a deep mark on me.
 
@@ -60,11 +60,11 @@ The self shows itself in speaking and judging about oneself. It is too large a t
   <p style="font-size: 0.85em; color: #888; margin-top: 0.8em;"><em>Four of the books behind this view: the self as a story, the self as a loop, mind as function, and mind as the activity of a living body.</em></p>
 </div>
 
-## Earlier Research: Do Models Think Like People?
+## Earlier Research
 
 To explore what thinking is, in my earlier research I split thinking into three areas, reasoning, understanding, and decision-making, and examined the behavior of large language models (models like ChatGPT). I found that in every area, models were excessively influenced by their learned data or by the prompt, a pitfall.
 
-### Reasoning: Do Models Compose Rules?
+### Reasoning
 
 The models appeared to repeat familiar solutions instead of composing rules. ARC is a collection of puzzles in which you find a visual rule from a few examples. When I gave problems built from the same rule but with a different look, accuracy dropped sharply on many tasks, and models struggled most on tasks that require combining several rules. A model that understood the rule should still solve the problem when the look changes. The frame for evaluation was a cognitive-science hypothesis, the Language of Thought Hypothesis, that human reasoning rests on three properties, logical coherence, compositionality, and productivity, and under this frame the models fell short of people.
 
@@ -73,7 +73,7 @@ The models appeared to repeat familiar solutions instead of composing rules. ARC
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>The Language of Thought lens: three properties of human reasoning (left) against how LLMs hold up on each (right).</em></p>
 </div>
 
-### Understanding: Do Models Understand Without Cues?
+### Understanding
 
 The models appeared to lean on surface cues more than on understanding. On a test where cues such as a conspicuously long correct option were reduced, the models' accuracy dropped and they fell far behind people. This test turns ARC puzzles into a multiple-choice benchmark, MC-LARC. If a model writes its answer directly, it is hard to tell whether it solved the problem by understanding, but with multiple choice I can vary the options and tell whether the model chose by understanding or by cues.
 
@@ -82,7 +82,7 @@ The models appeared to lean on surface cues more than on understanding. On a tes
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Generation hides where a model goes wrong; a contrastive multiple-choice format brings the specific mistake into view.</em></p>
 </div>
 
-### Decision-Making: Do Models Act Like Gamblers?
+### Decision-Making
 
 The models appeared to be pulled by a bias that resembles gambling addiction. When the model set its own bet amount and goal, risky choices increased. The experiment was a slot machine designed to lose money on average, and each round I compared a condition where the model sets the amount and goal with a condition where they are assigned.
 
@@ -93,7 +93,7 @@ In the model's explanations of its own decisions (its self-description), express
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>Testing whether a model can drift into gambling-addiction-like behavior.</em></p>
 </div>
 
-## Limits of My Earlier Research and a Hypothesis
+## Limits and Hypothesis
 
 The failures in all three areas converge. In reasoning the model was pulled toward familiar solutions, in understanding toward surface cues, and in decision-making toward a bias that resembles gambling addiction, and I could not test whether the model noticed that pull on its own.
 
@@ -103,9 +103,9 @@ The other was a framework in which an AI agent, one that acts on its own to solv
 
 In both attempts, checking whether an answer was right and deciding whether to accept a revised tip was done by people or by external programs. The noticing was done for the model, from outside. That made me wonder whether the model itself knows where it went wrong. I call this ability metacognition, the ability to examine and fix what one is doing, and I formed the hypothesis that this may be what models lack. If the self is seen as a story one tells about oneself, then examining oneself is part of how that story gets made.
 
-## Where I Am Heading: From AI Back to Humans
+## Where I Am Heading
 
-### Current Research: Metacognition in Models
+### Current Research
 
 To test this hypothesis, I am working on checking for metacognition inside models. The goal is for a model to notice and correct, on its own, the pull seen in the three areas, and I split this into three questions. Of the three questions below, the first two ask whether a model can notice and fix its own errors without outside verification, and the third asks whether its self-description guides its behavior.
 
@@ -115,7 +115,7 @@ The second is whether a model can fix an error it has noticed. To fix it, I beli
 
 The third is a different question from the first two: does a self-description lead to self-awareness? I test in models whether the self-story that Dennett described actually guides behavior, and I call this self-awareness. I rewrite the model's self-description and watch whether its behavior changes with it. But behavior can change after such an edit simply because the model followed a new instruction. Telling those two apart is the hardest part of this question.
 
-### Long-Term Vision: How Intelligence Works
+### Long-Term Vision
 
 My longer-term goal is to understand how intelligence, and the consciousness and self within it, work. I cannot yet answer that question, and the three questions are a first look at the part that shows itself in speech and judgment.
 
