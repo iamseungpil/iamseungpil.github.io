@@ -102,7 +102,7 @@ The failures in all three areas converge. The model was pulled toward familiar s
   <p style="font-size: 0.85em; color: #888; margin-top: 0.5em;"><em>One disease, three prescriptions, and where they converge.</em></p>
 </div>
 
-The two attempts to reduce this pull left the same point open. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions (<a href="https://arxiv.org/abs/2605.11936">Kim & Lee et al., NeurIPS 2026</a>). When solutions are more varied, a correct one is more likely to appear.
+Both attempts to reduce this pull helped, but both depended on a check from outside the model. One aimed at reasoning: to reduce the pull toward familiar solutions, I injected random vectors (bundles of numbers) into the input so the model produces different solutions (<a href="https://arxiv.org/abs/2605.11936">Kim & Lee et al., NeurIPS 2026</a>). When solutions are more varied, a correct one is more likely to appear.
 
 The other was a framework in which an AI agent, one that acts on its own to solve problems, looks back at its own attempt when it gets stuck and rewrites its solving tips (a memo of how to approach problems). In this framework too, whether the reflection was right was judged from outside.
 
